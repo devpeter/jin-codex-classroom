@@ -1,4 +1,4 @@
-# Jin的codex建站小课堂
+# Peter的codex建站小课堂
 
 纯静态 HTML + CSS + JS，可直接部署到 Vercel。
 
