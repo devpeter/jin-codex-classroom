@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jin的codex建站小课堂</title>
+<meta name="description" content="Jin 的 Codex 建站线下快速实操教程，包含准备资料、可填写工具、Prompt 与完整建站流程。" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234a9c45'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='system-ui' font-weight='700'>C</text></svg>" />
+</head>
+<body>
+<header class="header">
+  <button class="menu-toggle" id="menuToggle" aria-label="菜单">☰</button>
+  <a href="#" class="header-logo" data-page="home">
+    <div class="logo-icon">C</div>
+    <div class="logo-text">
+      <span class="logo-title">Jin的codex建站小课堂</span>
+      <span class="logo-sub">线下快速实操教程</span>
+    </div>
+  </a>
+  <div class="header-search">
+    <span class="search-icon">⌕</span>
+    <input type="text" id="searchInput" placeholder="搜索课程条目与 Prompt..." readonly />
+    <kbd class="kbd">⌘ K</kbd>
+  </div>
+  <div class="header-meta">
+    <span class="dot"></span>
+    <span>27 个课程条目 · 3 个填写工具</span>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section-title">完整内容目录</div>
+  <div class="path-note" style="font-size:12px;color:var(--text-muted);padding:4px 10px 10px;">准备 + 实操 / 本地第一版</div>
+  <ul class="sidebar-nav">
+    <li class="nav-group open" data-group="prep">
+      <div class="nav-group-header">
+        <span class="badge">01</span>
+        <span>准备部分</span>
+        <span class="count">13</span>
+        <span class="chevron">›</span>
+      </div>
+      <ul class="nav-group-items">
+        <li class="nav-subgroup-title">资料整理实操 · 6</li>
+        <li><a class="nav-item" data-page="prep-01" href="#"><span class="num">01</span>建站资料整理标准</a></li>
+        <li><a class="nav-item" data-page="prep-02" href="#"><span class="num">02</span>使用标准 md 模板整理建站资料</a></li>
+        <li><a class="nav-item" data-page="prep-03" href="#"><span class="num">03</span>第一轮：用 GPT 完成 SEO 关键词规划表</a></li>
+        <li><a class="nav-item" data-page="prep-04" href="#"><span class="num">04</span>公司画册处理流程</a></li>
+        <li><a class="nav-item" data-page="prep-05" href="#"><span class="num">05</span>第二轮：用 GPT 完成网站框架与 SEO 执行表</a></li>
+        <li><a class="nav-item" data-page="prep-06" href="#"><span class="num">06</span>各类资料转换与素材补齐</a></li>
+        <li class="nav-subgroup-title">Prompt 工具库 · 7</li>
+        <li><a class="nav-item" data-page="prep-07" href="#"><span class="num">07</span>判断能否进入首页 MVP</a></li>
+        <li><a class="nav-item" data-page="prep-08" href="#"><span class="num">08</span>检查 ICP 是否足以驱动建站</a></li>
+        <li><a class="nav-item" data-page="prep-09" href="#"><span class="num">09</span>基于证据建立 ICP 与反 ICP</a></li>
+        <li><a class="nav-item" data-page="prep-10" href="#"><span class="num">10</span>从客户需求到 SERP 与关键词—页面地图</a></li>
+        <li><a class="nav-item" data-page="prep-11" href="#"><span class="num">11</span>规划信息架构与内容模型</a></li>
+        <li><a class="nav-item" data-page="prep-12" href="#"><span class="num">12</span>生成定位方案与 Message House</a></li>
+        <li><a class="nav-item" data-page="prep-13" href="#"><span class="num">13</span>建立主张与证据登记表</a></li>
+      </ul>
+    </li>
+    <li class="nav-group" data-group="practice">
+      <div class="nav-group-header">
+        <span class="badge" style="background:#6b8f6a">02</span>
+        <span>实操部分</span>
+        <span class="count">14</span>
+        <span class="chevron">›</span>
+      </div>
+      <ul class="nav-group-items">
+        <li class="nav-subgroup-title">架构与体验基础 · 3</li>
+        <li><a class="nav-item" data-page="prac-01" href="#"><span class="num">01</span>开工资料确认</a></li>
+        <li><a class="nav-item" data-page="prac-02" href="#"><span class="num">02</span>网站架构规划</a></li>
+        <li><a class="nav-item" data-page="prac-03" href="#"><span class="num">03</span>视觉与体验定稿</a></li>
+        <li class="nav-subgroup-title">页面实操流程 · 9</li>
+        <li><a class="nav-item" data-page="prac-04" href="#"><span class="num">04</span>首页 MVP</a></li>
+        <li><a class="nav-item" data-page="prac-05" href="#"><span class="num">05</span>全站导航与超级菜单</a></li>
+        <li><a class="nav-item" data-page="prac-06" href="#"><span class="num">06</span>关于我们与信任内容</a></li>
+        <li><a class="nav-item" data-page="prac-07" href="#"><span class="num">07</span>产品体系与产品单页</a></li>
+        <li><a class="nav-item" data-page="prac-08" href="#"><span class="num">08</span>联系页面与询盘表单</a></li>
+        <li><a class="nav-item" data-page="prac-09" href="#"><span class="num">09</span>应用场景页面</a></li>
+        <li><a class="nav-item" data-page="prac-10" href="#"><span class="num">10</span>客户案例与项目页面</a></li>
+        <li><a class="nav-item" data-page="prac-11" href="#"><span class="num">11</span>网站页面补齐</a></li>
+        <li><a class="nav-item" data-page="prac-12" href="#"><span class="num">12</span>图片素材与功能完善</a></li>
+        <li class="nav-subgroup-title">检查与本地交付 · 2</li>
+        <li><a class="nav-item" data-page="prac-13" href="#"><span class="num">13</span>整站 SEO 与体验验收</a></li>
+        <li><a class="nav-item" data-page="prac-14" href="#"><span class="num">14</span>修改、回档与本地交付</a></li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+<main class="main">
+  <div class="content-panel" id="panel-home">
+    <div class="breadcrumb">
+      <a href="#" data-page="home">Jin的codex建站小课堂</a>
+      <span>/</span><span>课前填写工作台</span>
+    </div>
+    <div class="section-tabs">
+      <button class="section-tab active" data-section="prep">01 准备部分</button>
+      <button class="section-tab" data-section="practice">02 实操部分</button>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div>
+          <div class="card-label">课前填写工作台</div>
+          <h2 class="card-title">3 份空白资料表 · 填完导出新 Excel</h2>
+          <p class="card-desc">不提供来源文件，也不保留任何原公司或已填数据；仅提供明确标注的虚拟示例，学员填写区保持空白。内容自动保存在当前浏览器。</p>
+        </div>
+        <div class="save-badge" id="saveStatus"><span class="dot"></span><span>已启用本地保存</span></div>
+      </div>
+      <div class="tool-cards">
+        <div class="tool-card active" data-tool="info"><div class="num">01</div><h4>外贸独立站信息填写表</h4><p>课前完成公司、产品、页面、视觉、联系方式与素材资料整理。</p></div>
+        <div class="tool-card" data-tool="seo"><div class="num">02</div><h4>SEO 关键词规划表</h4><p>从种子词、分组到关键词—页面映射。</p></div>
+        <div class="tool-card" data-tool="framework"><div class="num">03</div><h4>网站框架与 SEO 执行表</h4><p>页面清单、Title/Description、导航与风险页。</p></div>
+      </div>
+<div class="form-area form-panel active" id="form-info">
+  <div class="form-toolbar">
+    <div class="form-toolbar-left"><h3>外贸独立站信息填写表</h3><div class="status">当前为空白表，可直接开始填写</div></div>
+    <div class="form-toolbar-right">
+      <button class="btn" id="btnCopyMd">复制为 Markdown</button>
+      <button class="btn btn-primary" id="btnExportXlsx">XLSX 导出新 Excel</button>
+      <button class="btn btn-danger" id="btnClear">清空</button>
+    </div>
+  </div>
+  <div class="form-tabs" id="infoTabs">
+    <button class="form-tab active" data-tab="company">01 公司基础信息</button>
+    <button class="form-tab" data-tab="goals">02 网站目标</button>
+    <button class="form-tab" data-tab="products">03 产品信息</button>
+    <button class="form-tab" data-tab="homepage">04 首页模块</button>
+    <button class="form-tab" data-tab="structure">05 页面结构</button>
+    <button class="form-tab" data-tab="visual">06 视觉风格</button>
+    <button class="form-tab" data-tab="contact">07 联系方式与表单</button>
+    <button class="form-tab" data-tab="assets">08 AI 素材需求</button>
+    <button class="form-tab" data-tab="upload">09 上传资料清单</button>
+    <button class="form-tab" data-tab="codex">10 Codex 项目说明</button>
+  </div>
+  <div class="form-tab-panel active" data-tab-panel="company">
+    <div class="form-section-title">公司基础信息</div>
+    <div class="example-box"><strong>虚拟示例说明</strong> 统一使用虚构企业 Northstar；请在空白区填写自己的资料。</div>
+    <div class="field-grid">
+      <div class="field"><label class="field-label">公司英文名称 <span class="req">必填</span></label><input type="text" data-key="company_en" placeholder="Northstar Components Ltd." /></div>
+      <div class="field"><label class="field-label">公司中文名称</label><input type="text" data-key="company_zh" placeholder="北辰零部件有限公司" /></div>
+      <div class="field"><label class="field-label">品牌名称 <span class="req">必填</span></label><input type="text" data-key="brand" placeholder="Northstar" /></div>
+      <div class="field"><label class="field-label">成立年份</label><input type="text" data-key="founded" placeholder="2012" /></div>
+      <div class="field full"><label class="field-label">一句话公司定位</label><textarea data-key="tagline" rows="2"></textarea></div>
+      <div class="field full"><label class="field-label">公司简介（可公开）</label><textarea data-key="about" rows="3"></textarea></div>
+      <div class="field"><label class="field-label">总部 / 工厂位置</label><input type="text" data-key="hq" /></div>
+      <div class="field"><label class="field-label">主要市场</label><input type="text" data-key="markets" placeholder="北美 / 欧洲" /></div>
+    </div>
+  </div>
+  <div class="form-tab-panel" data-tab-panel="goals">
+    <div class="form-section-title">网站目标</div>
+    <div class="field-grid">
+      <div class="field full"><label class="field-label">主转化事件 <span class="req">必填</span></label><input type="text" data-key="main_cta" /></div>
+      <div class="field full"><label class="field-label">次要转化</label><input type="text" data-key="secondary_cta" /></div>
+      <div class="field full"><label class="field-label">ICP 一句话 <span class="req">必填</span></label><textarea data-key="icp" rows="3"></textarea></div>
+      <div class="field full"><label class="field-label">反 ICP</label><textarea data-key="anti_icp" rows="3"></textarea></div>
+      <div class="field full"><label class="field-label">购买角色 / 委员会</label><textarea data-key="buyers" rows="2"></textarea></div>
+      <div class="field full"><label class="field-label">触发事件</label><textarea data-key="triggers" rows="2"></textarea></div>
+    </div>
+  </div>
+  <div class="form-tab-panel" data-tab-panel="products">
+    <div class="form-section-title">产品信息</div>
+    <div class="field-grid">
+      <div class="field full"><label class="field-label">主推产品 / 系列 <span class="req">必填</span></label><textarea data-key="products" rows="4"></textarea></div>
+      <div class="field full"><label class="field-label">核心卖点 / 差异化</label><textarea data-key="usps" rows="3"></textarea></div>
+      <div class="field full"><label class="field-label">关键参数与认证（有证据）</label><textarea data-key="specs" rows="3"></textarea></div>
+      <div class="field"><label class="field-label">是否有产品手册</label><input type="text" data-key="has_catalog" /></div>
+      <div class="field"><label class="field-label">产品图是否齐全</label><input type="text" data-key="has_images" /></div>
+    </div>
+  </div>
+  <div class="form-tab-panel" data-tab-panel="homepage">
+    <div class="form-section-title">首页模块</div>
+    <div class="field-grid">
+      <div class="field full"><label class="field-label">Hero 主标题 <span class="req">必填</span></label><input type="text" data-key="hero_title" /></div>
+      <div class="field full"><label class="field-label">Hero 副文案</label><textarea data-key="hero_sub" rows="2"></textarea></div>
+      <div class="field"><label class="field-label">主 CTA 按钮文案</label><input type="text" data-key="hero_cta" /></div>
+      <div class="field full"><label class="field-label">首页模块顺序</label><textarea data-key="home_modules" rows="2"></textarea></div>
+      <div class="field full"><label class="field-label">首页禁止出现的内容</label><textarea data-key="home_forbid" rows="2"></textarea></div>
+    </div>
+  </div>
+  <div class="form-tab-panel" data-tab-panel="structure">
+    <div class="form-section-title">页面结构</div>
+    <div class="field-grid">
+      <div class="field full"><label class="field-label">页面清单（路径 + 名称） <span class="req">必填</span></label><textarea data-key="pages" rows="4"></textarea></div>
+      <div class="field full"><label class="field-label">二期页面</label><textarea data-key="pages_future" rows="2"></textarea></div>
+      <div class="field full"><label class="field-label">导航备注</label><textarea data-key="nav_notes" rows="2"></textarea></div>
+    </div>
+  </div>
+  <div class="form-tab-panel" data-tab-panel="visual">
+    <div class="form-section-title">视觉风格</div>
+    <div class="field-grid">
+      <div class="field"><label class="field-label">主色</label><input type="text" data-key="color_primary" placeholder="#0B3D2E" /></div>
+      <div class="field"><label class="field-label">强调色</label><input type="text" data-key="color_accent" /></div>
+      <div class="field"><label class="field-label">风格关键词</label><input type="text" data-key="style_keywords" /></div>
+      <div class="field"><label class="field-label">避免风格</label><input type="text" data-key="style_avoid" /></div>
+      <div class="field full"><label class="field-label">参考网站（仅学结构）</label><textarea data-key="ref_sites" rows="2"></textarea></div>
+    </div>
+  </div>
+  <div class="form-tab-panel" data-tab-panel="contact">
+    <div class="form-section-title">联系方式与表单</div>
+    <div class="field-grid">
+      <div class="field"><label class="field-label">邮箱 <span class="req">必填</span></label><input type="text" data-key="email" /></div>
+      <div class="field"><label class="field-label">电话 / WhatsApp</label><input type="text" data-key="phone" /></div>
+      <div class="field full"><label class="field-label">地址</label><input type="text" data-key="address" /></div>
+      <div class="field full"><label class="field-label">表单字段</label><textarea data-key="form_fields" rows="2"></textarea></div>
+      <div class="field"><label class="field-label">表单提交方式</label><input type="text" data-key="form_action" /></div>
+    </div>
+  </div>
+  <div class="form-tab-panel" data-tab-panel="assets">
+    <div class="form-section-title">AI 素材需求</div>
+    <div class="field-grid">
+      <div class="field full"><label class="field-label">需生成/拍摄的图片</label><textarea data-key="ai_images" rows="3"></textarea></div>
+      <div class="field full"><label class="field-label">禁止使用的素材</label><textarea data-key="ai_forbid" rows="2"></textarea></div>
+    </div>
+  </div>
+  <div class="form-tab-panel" data-tab-panel="upload">
+    <div class="form-section-title">上传资料清单</div>
+    <div class="field-grid">
+      <div class="field full"><label class="field-label">已提供资料</label><textarea data-key="upload_list" rows="3"></textarea></div>
+      <div class="field full"><label class="field-label">仍缺失资料</label><textarea data-key="missing_list" rows="3"></textarea></div>
+    </div>
+  </div>
+  <div class="form-tab-panel" data-tab-panel="codex">
+    <div class="form-section-title">Codex 项目说明</div>
+    <div class="field-grid">
+      <div class="field full"><label class="field-label">本轮目标 <span class="req">必填</span></label><textarea data-key="codex_goal" rows="2"></textarea></div>
+      <div class="field full"><label class="field-label">范围与不做事项</label><textarea data-key="codex_scope" rows="2"></textarea></div>
+      <div class="field full"><label class="field-label">交付物</label><textarea data-key="codex_deliverables" rows="2"></textarea></div>
+      <div class="field full"><label class="field-label">验收标准</label><textarea data-key="codex_accept" rows="2"></textarea></div>
+    </div>
+  </div>
+</div>
+<div class="form-area form-panel" id="form-seo">
+  <div class="form-toolbar">
+    <div class="form-toolbar-left"><h3>SEO 关键词规划表</h3></div>
+    <div class="form-toolbar-right">
+      <button class="btn" data-action="copy-seo">复制 Markdown</button>
+      <button class="btn btn-primary" data-action="export-seo">导出 Excel</button>
+      <button class="btn btn-danger" data-action="clear-seo">清空</button>
+    </div>
+  </div>
+  <div class="field-grid">
+    <div class="field full"><label class="field-label">种子关键词</label><textarea data-key="seo_seeds" rows="4"></textarea></div>
+    <div class="field full"><label class="field-label">主题分组</label><textarea data-key="seo_groups" rows="3"></textarea></div>
+    <div class="field full"><label class="field-label">页面映射</label><textarea data-key="seo_mapping" rows="4"></textarea></div>
+    <div class="field full"><label class="field-label">竞品 / SERP 笔记</label><textarea data-key="seo_competitors" rows="3"></textarea></div>
+    <div class="field full"><label class="field-label">备注</label><textarea data-key="seo_notes" rows="2"></textarea></div>
+  </div>
+</div>
+<div class="form-area form-panel" id="form-framework">
+  <div class="form-toolbar">
+    <div class="form-toolbar-left"><h3>网站框架与 SEO 执行表</h3></div>
+    <div class="form-toolbar-right">
+      <button class="btn" data-action="copy-fw">复制 Markdown</button>
+      <button class="btn btn-primary" data-action="export-fw">导出 Excel</button>
+      <button class="btn btn-danger" data-action="clear-fw">清空</button>
+    </div>
+  </div>
+  <div class="field-grid">
+    <div class="field full"><label class="field-label">页面清单</label><textarea data-key="fw_pages" rows="4"></textarea></div>
+    <div class="field full"><label class="field-label">Title / Description 草稿</label><textarea data-key="fw_meta" rows="4"></textarea></div>
+    <div class="field full"><label class="field-label">导航结构</label><textarea data-key="fw_nav" rows="3"></textarea></div>
+    <div class="field full"><label class="field-label">风险页 / 需证据页</label><textarea data-key="fw_risks" rows="2"></textarea></div>
+  </div>
+</div>
+    </div>
+<div class="card">
+  <div class="card-label">学员资料</div>
+  <h2 class="card-title" style="font-size:18px;">8 个 Markdown 模板</h2>
+  <p style="margin:8px 0 12px;"><a class="btn btn-primary" href="templates/Codex建站资料模板.zip" download>ZIP 下载全部</a></p>
+  <div class="template-grid">
+    <a class="template-item" href="templates/00-先看这个-资料逻辑.md" download><span class="t-num">01</span><div><h4>资料包逻辑</h4><p>三个使用阶段</p></div></a>
+    <a class="template-item" href="templates/01-首页MVP必填.md" download><span class="t-num">02</span><div><h4>首页 MVP 必填</h4><p>核心信息</p></div></a>
+    <a class="template-item" href="templates/02-禁写规则必填.md" download><span class="t-num">03</span><div><h4>禁写规则必填</h4><p>防止乱写乱猜</p></div></a>
+    <a class="template-item" href="templates/03-首页优化可选.md" download><span class="t-num">04</span><div><h4>首页优化可选</h4><p>补充资料</p></div></a>
+    <a class="template-item" href="templates/04-整站扩展可选.md" download><span class="t-num">05</span><div><h4>整站扩展可选</h4><p>扩展完整站</p></div></a>
+    <a class="template-item" href="templates/05-附件怎么放.md" download><span class="t-num">06</span><div><h4>附件怎么放</h4><p>目录与命名</p></div></a>
+    <a class="template-item" href="templates/06-给Codex的执行说明.md" download><span class="t-num">07</span><div><h4>给 Codex 的执行说明</h4><p>任务与交付</p></div></a>
+    <a class="template-item" href="templates/SEO关键词种子表.md" download><span class="t-num">08</span><div><h4>SEO 关键词种子表</h4><p>产品与市场种子</p></div></a>
+  </div>
+</div>
+  </div>
+
