@@ -1,6 +1,6 @@
-/* Jin的codex建站小课堂 - 交互逻辑 */
+/* Peter的codex建站小课堂 - 交互逻辑 */
 
-const STORAGE_KEY = 'jin-codex-classroom-form-data';
+const STORAGE_KEY = 'peter-codex-classroom-form-data';
 
 function toast(msg, ms = 2200) {
   const el = document.getElementById('toast');
