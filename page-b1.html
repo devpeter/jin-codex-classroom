@@ -1,0 +1,147 @@
+<div class="content-panel" id="panel-prep-01">
+  <div class="breadcrumb">
+    <a href="#" data-page="home">Jin的codex建站小课堂</a>
+    <span>/</span><span>准备部分</span><span>/</span><span>01</span>
+  </div>
+  <div class="lesson-content">
+    <h1>建站资料整理标准</h1>
+    <div class="lesson-meta"><span>准备部分</span><span>·</span><span>可复制 Prompt</span>
+      <button class="btn" style="padding:4px 10px;font-size:12px;" onclick="copyPageText(this)">复制本页</button>
+    </div>
+    <h2>目标</h2>
+    <p>每个文件至少登记：文件名、来源、日期、负责人、格式、用途、证据等级、保密级别。客户原话与内部推测分开保存；未经核验的性能、认证、客户、价格表述标为「待核验」。</p>
+    <h2>要点</h2>
+    <ul><li>原文件放「建站资料」，摘要放「建站资料-md」</li><li>不能证明的内容写「未知/待确认」</li><li>ICP、异议、客户用语单独整理</li></ul>
+    <h2>可复制 Prompt</h2>
+    <div class="prompt-block" id="prompt-prep-01">请先不要建站，也不要修改网站代码。根据建议资料文件夹结构，检查是否已有「建站资料」和「建站资料-md」。先输出拟创建目录、会保留的现有文件、可能冲突路径。等待确认后再创建缺失目录。<button class="copy-btn" onclick="copyText('prompt-prep-01')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>进入首页 MVP 前须明确：目标与转化、ICP/反 ICP、主推产品、证据资产、禁写规则、联系方式。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-02">
+  <div class="lesson-content">
+    <h1>使用标准 md 模板整理建站资料</h1>
+    <div class="lesson-meta"><span>准备部分</span></div>
+    <h2>目标</h2>
+    <p>把原始资料沉淀成可被 Codex 读取的 Markdown。推荐顺序：禁写规则 → 首页 MVP 必填 → 执行说明。</p>
+    <h2>要点</h2>
+    <ul><li>只用已核验事实</li><li>标注来源页码/文件名</li><li>禁止编造业绩与客户名</li></ul>
+    <h2>可复制 Prompt</h2>
+    <div class="prompt-block" id="prompt-prep-02">请根据「首页 MVP 必填」与「禁写规则」模板，把我提供的资料整理成结构化 Markdown。不能确认的字段写「待确认」，不要补写。<button class="copy-btn" onclick="copyText('prompt-prep-02')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>md 模板关键字段已填；禁写清单已勾选；无无证据绝对化表述。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-03">
+  <div class="lesson-content">
+    <h1>第一轮：用 GPT 完成 SEO 关键词规划表</h1>
+    <h2>目标</h2>
+    <p>从种子词扩展主题簇，输出页面→关键词映射。不要编造搜索量。</p>
+    <h2>可复制 Prompt</h2>
+    <div class="prompt-block" id="prompt-prep-03">你是 B2B SEO 助理。根据我提供的种子词与 ICP，扩展关键词并输出：主题分组、建议落地页、主词/次词。不要编造搜索量数字。<button class="copy-btn" onclick="copyText('prompt-prep-03')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>SEO 规划表已有种子词与页面映射；无虚构数据。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-04">
+  <div class="lesson-content">
+    <h1>公司画册处理流程</h1>
+    <p>画册拆页、脱敏、标记可公开范围，再写入 md 并注明来源页码。</p>
+    <div class="prompt-block" id="prompt-prep-04">请只整理我指定的画册页：摘录可公开的产品与参数文字，标注页码；无法判断授权的内容列入待确认，不要改网站代码。<button class="copy-btn" onclick="copyText('prompt-prep-04')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>画册关键页已摘录；授权不明内容已隔离。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-05">
+  <div class="lesson-content">
+    <h1>第二轮：用 GPT 完成网站框架与 SEO 执行表</h1>
+    <p>产出页面清单、导航与每页 Title/Description 草稿，仍不写完整文案。</p>
+    <div class="prompt-block" id="prompt-prep-05">根据 ICP 与产品清单，输出网站框架：页面树、导航、每页 Title/Description 草稿与风险备注。不要写完整营销文案。<button class="copy-btn" onclick="copyText('prompt-prep-05')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>框架表已有页面清单与 meta 草稿。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-06">
+  <div class="lesson-content">
+    <h1>各类资料转换与素材补齐</h1>
+    <p>表格转 CSV/Markdown；截图摘录原文；图片登记用途与版权。</p>
+    <div class="prompt-block" id="prompt-prep-06">请把我指定的表格/截图转为可搜索文本或 CSV，并输出素材登记表：文件名、用途、授权、是否公开。<button class="copy-btn" onclick="copyText('prompt-prep-06')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>关键表格已文本化；素材清单已建立。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-07">
+  <div class="lesson-content">
+    <h1>判断能否进入首页 MVP</h1>
+    <p>对照验收门检查资料是否齐备，缺项先补资料再开工。</p>
+    <div class="prompt-block" id="prompt-prep-07">请根据验收门清单，逐项判断我现有资料是否足以进入首页 MVP。输出：已具备、缺失、建议补齐顺序。不要开始写页面。<button class="copy-btn" onclick="copyText('prompt-prep-07')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>验收门全部勾选或明确延期项。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-08">
+  <div class="lesson-content">
+    <h1>检查 ICP 是否足以驱动建站</h1>
+    <p>检查购买角色、场景、触发事件、异议、反 ICP 是否具体可执行。</p>
+    <div class="prompt-block" id="prompt-prep-08">请审查以下 ICP 描述是否足以驱动建站文案与导航。指出模糊处并给出改写建议，不要编造客户。<button class="copy-btn" onclick="copyText('prompt-prep-08')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>ICP 可支撑首页主张与栏目命名。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-09">
+  <div class="lesson-content">
+    <h1>基于证据建立 ICP 与反 ICP</h1>
+    <p>优先用真实成交与询盘记录建立 ICP/反 ICP，每条标注证据来源。</p>
+    <div class="prompt-block" id="prompt-prep-09">根据我提供的成交/询盘摘录，提炼 ICP 与反 ICP。每条结论后标注证据来源；证据不足标「待确认」。<button class="copy-btn" onclick="copyText('prompt-prep-09')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>ICP/反 ICP 已写入信息表并带来源。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-10">
+  <div class="lesson-content">
+    <h1>从客户需求到 SERP 与关键词—页面地图</h1>
+    <p>从客户需求出发做 SERP 观察，形成关键词—页面地图。</p>
+    <div class="prompt-block" id="prompt-prep-10">根据 ICP 与种子词，帮我整理 SERP 观察笔记与「关键词→建议页面」映射表。不要编造排名或搜索量。<button class="copy-btn" onclick="copyText('prompt-prep-10')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>关键词—页面地图已可指导架构。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-11">
+  <div class="lesson-content">
+    <h1>规划信息架构与内容模型</h1>
+    <p>规划信息架构与内容模型：页面类型、字段、复用模块。</p>
+    <div class="prompt-block" id="prompt-prep-11">请输出信息架构草案：站点地图、内容类型与字段、模块复用关系。不要写视觉稿。<button class="copy-btn" onclick="copyText('prompt-prep-11')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>架构草案可支撑首页与产品页开工。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-12">
+  <div class="lesson-content">
+    <h1>生成定位方案与 Message House</h1>
+    <p>生成定位方案与 Message House：受众、承诺、支撑点、禁忌语。</p>
+    <div class="prompt-block" id="prompt-prep-12">基于 ICP 与产品事实，输出 Message House：核心定位句、三层支撑、证明点、禁忌表述。无证据处标待确认。<button class="copy-btn" onclick="copyText('prompt-prep-12')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>定位句与支撑点已对齐证据清单。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
+
+<div class="content-panel" id="panel-prep-13">
+  <div class="lesson-content">
+    <h1>建立主张与证据登记表</h1>
+    <p>建立主张与证据登记表：主张、证据类型、来源、是否可公开。</p>
+    <div class="prompt-block" id="prompt-prep-13">请把我列出的官网主张整理成登记表：主张｜证据｜来源｜公开等级｜状态。缺少证据的主张标红。<button class="copy-btn" onclick="copyText('prompt-prep-13')">复制</button></div>
+    <div class="accept-gate"><h3>验收门</h3><p>主张—证据表已完成，禁写项已同步。</p></div>
+    <div class="next-lesson"><a href="#" data-page="home">返回工作台</a></div>
+  </div>
+</div>
